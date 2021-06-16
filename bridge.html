@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coinskite | NFT Bridge</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="max-w-6xl w-full mx-auto flex p-4">
+      <img src="2.jpeg" alt="logo" class="h-8 mr-3" />
+      <a href="index.html">
+        <button
+          class="rounded-full py-1 px-4 mx-2 border text-black hover:bg-green-600 hover:text-white hidden md:flex items-center focus:outline-none transition-colors"
+        >
+          <svg
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="current-color"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.1748 3.737C14.8188 6.293 15.1308 11.543 12.0788 13.912C9.78183 15.695 6.54083 14.792 4.66683 14.025C4.66683 14.025 3.39683 15.628 2.48583 17.765C2.18083 18.482 0.841831 17.692 1.07683 17.085C4.05483 9.4 14.1868 5.566 14.1868 5.566C14.1868 5.566 7.03783 5.263 2.25983 11.506C2.13183 10.08 1.91983 6.222 5.61983 3.856C10.6358 0.644999 20.1918 3.141 19.1748 3.737Z"
+            ></path>
+          </svg>
+          <span class="ml-1">Minter</span>
+        </button>
+      </a>
+      <button
+        class="rounded-full py-1 px-4 mx-2 border bg-green-600 text-white hover:bg-green-900 hover:text-white hidden md:flex items-center focus:outline-none transition-colors"
+      >
+        <svg
+          width="22"
+          height="20"
+          viewBox="0 0 22 20"
+          fill="current-color"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 12.5263V11.4737C0.0615789 11.4479 5.9279 9.13104 9.47368 3.05262L10.5263 3.57894C6.79526 9.97526 0.264737 12.4179 0 12.5263Z"
+          ></path>
+          <path
+            d="M11.5789 3.05263C11.5789 3.05263 11.5789 2 10.5263 2C9.47363 2 9.47363 3.05263 9.47363 3.05263V17.7895H11.5789V3.05263Z"
+          ></path>
+          <path d="M20.0001 14.6316H1.05273V12.5263H20.0001V14.6316Z"></path>
+          <path
+            d="M21.0527 12.5263V11.4737C20.9911 11.4479 15.1243 9.13104 11.579 3.05262L10.5264 3.57894C14.2579 9.97526 20.7879 12.4179 21.0527 12.5263Z"
+          ></path>
+          <path
+            d="M6.31561 13.0526H7.36824V7.26316H6.31561V13.0526ZM14.7367 13.0526H13.684V7.26316H14.7367V13.0526ZM3.15771 13.0526H4.21035V9.89473H3.15771V13.0526ZM17.8946 13.5789H16.8419V9.89473H17.8946V13.5789Z"
+          ></path>
+        </svg>
+        <span class="ml-1">Bridge</span>
+      </button>
+      <button
+        class="rounded-full py-1 px-4 mx-2 text-black border hover:bg-green-600 hover:text-white hidden md:flex items-center focus:outline-none transition-colors"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="current-color">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+          ></path>
+        </svg>
+
+        <span class="ml-1">Account</span>
+      </button>
+
+      <button
+        class="rounded-full h-10 w-10 flex border items-center justify-center ml-auto bg-gray-200 focus:outline-none transition-colors h-2 hover:bg-black"
+      >
+        <svg
+          width="22"
+          height="20"
+          fill="current-color"
+          viewBox="0 0 24 24"
+          class="fill-current hover:text-white"
+        >
+          <path
+            d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+          ></path>
+        </svg>
+      </button>
+      <button
+        class="rounded-full py-1 px-4 ml-2 bg-gray-200 text-black border flex hover:bg-black hover:text-white items-center focus:outline-none transition-colors"
+      >
+        <img
+          src="https://image.flaticon.com/icons/png/512/149/149071.png"
+          class="h-5"
+        />
+        <span class="ml-2 hidden md:block">Connect Wallet</span>
+      </button>
+    </div>
+
+    <div
+      class="flex bg-green-600 bg-cover"
+      style="
+        background-image: url(./banner-art.png);
+        background: cover;
+        background: opacity(100);
+      "
+    >
+      <div class="flex mx-auto mb-10">
+        <div
+          class="w-full mt-10 mb-10 flex max-w-6xl flex-col p-2 m-auto md:flex-row"
+        >
+          <div class="w-full max-w-3xl p-4">
+            <h1 class="text-4xl text-white">
+              <span class="font-semibold">NFT</span> Bridge
+            </h1>
+
+            <p class="w-full text-white opacity-60 font-normal text-sm mt-10">
+              Matic brings you a trustless two-way transaction channel between
+              Matic and Ethereum by introducing the cross-chain bridge with
+              Plasma and PoS security. With this users can transfer tokens
+              across matic without incurring third-party risks and market
+              liquidity limitations. The Plasma and PoS Bridge is available on
+              both Mumbai as well as Mainnet.
+            </p>
+          </div>
+          <div class="mx-auto p-4 mb-18 md:ml-32">
+            <img
+              src="https://bridge.mintnft.today/static/media/graphic.b01f2caf.png"
+              alt="graphic"
+              class="md:w-3/4 h-56"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="flex -mt-20 md:mr-auto mx-auto mb-10">
+        <div
+          class="max-w-3xl w-full mr-auto md:mr-48 md:-ml-40 flex flex-col rounded-3xl bg-white shadow-xl px-4 mb-14"
+        >
+          <ul
+            class="flex py-4 bg-gray-50 border-b border-gray-200 rounded-t-3xl"
+          >
+            <li class="p-0">
+              <a
+                class="inline-block py-2 px-4 text-black text-base font-medium active"
+                >Transfer Tokens
+              </a>
+            </li>
+            <li class="p-0">
+              <a
+                class="inline-block py-2 px-4 text-gray-500 text-base font-medium"
+                >Check for mapping</a
+              >
+            </li>
+          </ul>
+
+          <h1
+            class="w-full p-5 border-b border-gray-200 rounded-t-3xl text-2xl font-medium"
+          >
+            ETH to MATIC
+          </h1>
+
+          <div
+            class="max-w-3xl w-full mx-auto flex flex-col rounded-xl bg-pink-100 mt-4 px-4"
+          >
+            <p class="mt-4 mb-5 text-sm">
+              <span class="font-medium">Message</span> <br />
+              <br />
+              To access the ETH to MATIC bridge you need to switch to Eth
+              Mainnet or Goerli Testnet.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row">
+            <div class="flex-1 p-8">
+              <div class="mb-3">
+                <label class="text-green-600 font-medium"
+                  >Token Address(ETH)</label
+                >
+                <input
+                  type="text"
+                  class="bg-white rounded w-full mt-2 p-3 transition-colors border border-gray-500 focus:border-purple-600 focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col w-full mt-10">
+                <label class="text-green-600 font-medium"
+                  >Token IDs
+                  <span class="text-gray-500 font-thin"
+                    >(without space, with commas)</span
+                  >
+                </label>
+                <input
+                  type="text"
+                  class="bg-white rounded w-full mt-2 p-3 transition-colors border border-gray-500 focus:border-purple-600 focus:outline-none"
+                  placeholder="1,2,3"
+                />
+              </div>
+            </div>
+            <div class="flex-1 p-8">
+              <div class="mb-3">
+                <label class="text-green-600 font-medium"
+                  >Receiver Address (Child Chain)</label
+                >
+                <input
+                  type="text"
+                  class="bg-white rounded w-full mt-2 p-3 transition-colors border border-gray-500 focus:border-purple-600 focus:outline-none"
+                />
+              </div>
+
+              <div class="flex flex-col mt-10 md:flex-row">
+                <div class="flex flex-col w-full">
+                  <label class="text-green-600 font-medium mb-2"
+                    >NFT Type</label
+                  >
+                  <div
+                    class="flex p-1 border-solid border border-gray-500 rounded"
+                  >
+                    <button
+                      autofocus
+                      class="bg-white text-black w-full flex flex-col border border-2 border-light-blue-500 rounded px-7 py-2 transition-colors items-center content-center active:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+                    >
+                      ERC721
+                    </button>
+
+                    <button
+                      class="bg-white text-black w-full flex flex-col border border-2 border-light-blue-500 rounded px-7 py-2 ml-2 transition-colors items-center content-center focus:outline-none focus:bg-gray-700 focus:text-white"
+                    >
+                      ERC1155
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full md:flex-row my-3">
+            <div class="flex px-8 py-1 mb-5">
+              <button
+                class="bg-white text-black flex flex-col border border-2 border-green-500 rounded px-7 py-2 hover:bg-green-500 hover:text-white transition-colors items-center content-center focus:outline-none"
+              >
+                Approve
+              </button>
+
+              <button
+                class="autofocus bg-green-500 text-white flex flex-col border border-2 border-green-500 rounded px-7 py-2 ml-2 hover:bg-green-600 transition-colors items-center content-center focus:outline-none"
+              >
+                Preview
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <!-- #061024  -->
+    <div
+      class="flex max-w-auto py7 text-xs text-purple-500"
+      style="background-color: #19934a;"
+    >
+      1
+    </div>
+    <div
+      class="max-w-auto w-full flex px-8 py-24 -mb-20 bg-green-600"
+      style="
+        background-image: url(./footer-bg.png);
+        background: cover;
+        background: opacity(100);
+      "
+    >
+      <div class="max-w-6xl w-full mx-auto flex flex-col md:flex-row">
+        <div class="flex flex-col items-start mb-5">
+          <img src="2.1.png" alt="logo" class="h-8 mr-3" />
+          <p class="text-white font-normal mt-6">
+            Polygon is a protocol and a framework for building and <br />
+            connecting Ethereum-compatible blockchain networks
+          </p>
+        </div>
+        <div class="flex flex-1 md:justify-end mb-7">
+          <a href="https://twitter.com/coinskite">
+            <button
+              class=" bg-green-700 rounded hover:bg-white px-3 mr-3 h-10"
+            >
+              <svg height="22" width="22" viewBox="0 0 24 24" fill="#000">
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"
+                ></path>
+              </svg>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/coins-kite">
+            <button
+              class="rounded  bg-green-700 hover:bg-white px-3 h-10"
+            >
+              <img src="linkedin.png" alt="" class="h-5 w-5" />
+            </button>
+            <a href="https://www.instagram.com/coinskite/">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="instagram.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+          <a href="https://www.github.com/coinskite/">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="github.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+          <a href="https://www.youtube.com/channel/UCdDmAfczwB_Pu2k05mJNJOQ">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="youtube.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+          <a href="https://www.facebook.com/coinskite.coinskite">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="facebook.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+          <a href="https://medium.com/coinskite">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="medium.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

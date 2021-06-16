@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coinskite | NFT Minter</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="flex">
+      <div class="max-w-6xl w-full mx-auto flex p-4">
+        <img src="2.1.png" alt="logo" class="h-8 mr-3" />
+
+        <button
+          class="rounded-full py-1 px-4 mx-2 bg-green-400 border button-1 text-white hover:bg-green-600 hover:text-white hidden md:flex items-center focus:outline-none transition-colors"
+        >
+          <svg
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="current-color"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.1748 3.737C14.8188 6.293 15.1308 11.543 12.0788 13.912C9.78183 15.695 6.54083 14.792 4.66683 14.025C4.66683 14.025 3.39683 15.628 2.48583 17.765C2.18083 18.482 0.841831 17.692 1.07683 17.085C4.05483 9.4 14.1868 5.566 14.1868 5.566C14.1868 5.566 7.03783 5.263 2.25983 11.506C2.13183 10.08 1.91983 6.222 5.61983 3.856C10.6358 0.644999 20.1918 3.141 19.1748 3.737Z"
+            ></path>
+          </svg>
+          <span class="ml-1">Minter</span>
+        </button>
+
+        <a href="bridge.html">
+          <button
+            class="rounded-full py-1 px-4 mx-2 text-black border hover:bg-green-600 hover:text-white hidden md:flex items-center focus:outline-none transition-colors"
+          >
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="current-color"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 12.5263V11.4737C0.0615789 11.4479 5.9279 9.13104 9.47368 3.05262L10.5263 3.57894C6.79526 9.97526 0.264737 12.4179 0 12.5263Z"
+              ></path>
+              <path
+                d="M11.5789 3.05263C11.5789 3.05263 11.5789 2 10.5263 2C9.47363 2 9.47363 3.05263 9.47363 3.05263V17.7895H11.5789V3.05263Z"
+              ></path>
+              <path
+                d="M20.0001 14.6316H1.05273V12.5263H20.0001V14.6316Z"
+              ></path>
+              <path
+                d="M21.0527 12.5263V11.4737C20.9911 11.4479 15.1243 9.13104 11.579 3.05262L10.5264 3.57894C14.2579 9.97526 20.7879 12.4179 21.0527 12.5263Z"
+              ></path>
+              <path
+                d="M6.31561 13.0526H7.36824V7.26316H6.31561V13.0526ZM14.7367 13.0526H13.684V7.26316H14.7367V13.0526ZM3.15771 13.0526H4.21035V9.89473H3.15771V13.0526ZM17.8946 13.5789H16.8419V9.89473H17.8946V13.5789Z"
+              ></path>
+            </svg>
+            <span class="ml-1">Bridge</span>
+          </button>
+        </a>
+        <button
+          class="rounded-full py-1 px-4 mx-2 text-black border hover:bg-green-600 hover:text-white hidden md:flex items-center focus:outline-none transition-colors"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="current-color">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+            ></path>
+          </svg>
+
+          <span class="ml-1">Account</span>
+        </button>
+
+        <button
+          class="rounded-full py-1 px-4 ml-auto bg-gray-200 text-black border flex hover:bg-black hover:text-white items-center focus:outline-none transition-colors"
+        >
+          <img
+            src="https://image.flaticon.com/icons/png/512/149/149071.png"
+            class="h-5"
+          />
+          <span class="ml-2 hidden md:block">Connect Wallet</span>
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="flex bg-cover bg-green-600"
+      style="
+        background-image: url(./banner-art.png);
+        background: cover;
+        background: opacity(100);
+      "
+    >
+      <div class="max-w-6xl w-full mx-auto flex flex-col px-4 py-24">
+        <h1 class="text-4xl text-white mb-2">
+          <span class="font-semibold">NFT</span> Minter
+        </h1>
+
+        <p class="text-white opacity-60">
+          Mint NIFT on polygon at speed of light!
+        </p>
+      </div>
+    </div>
+
+    <div class="flex -mt-20 p-2 mb-40">
+      <div
+        class="max-w-6xl w-full mx-auto flex flex-col rounded-3xl bg-white shadow-xl"
+      >
+        <h1
+          class="w-full p-5 bg-gray-50 border-b border-gray-200 rounded-t-3xl text-2xl font-medium"
+        >
+          Mint your NFT
+        </h1>
+        <div class="flex flex-col md:flex-row">
+          <div class="flex-1 p-8">
+            <label class="text-green-600 font-medium">Upload</label>
+
+            <div
+              class="flex flex-col border-dotted border-2 border-light-blue-500 rounded-xl px-6 py-12 mt-2 items-center content-center"
+            >
+              <span class="text-green-600 underline pb-5">Browse File</span>
+              <span class="text-gray-400"
+                >Supports JPG, PNG and MP4 videos. Max file size : 10MB.</span
+              >
+            </div>
+          </div>
+          <div class="flex-1 p-8">
+            <div class="mb-3">
+              <label class="text-green-600 font-medium">Title</label>
+              <input
+                type="text"
+                class="bg-white rounded w-full mt-2 p-3 transition-colors border border-gray-500 focus:border-purple-600 focus:outline-none"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="text-green-600 font-medium">Description</label>
+              <textarea
+                cols="5"
+                class="bg-white rounded w-full mt-2 p-3 transition-colors border border-gray-500 focus:border-purple-600 focus:outline-none"
+              ></textarea>
+            </div>
+
+            <div class="flex flex-col md:flex-row">
+              <div class="flex flex-col">
+                <label class="text-green-600 font-medium mb-2">NFT Type</label>
+                <div
+                  class="flex p-1 border-solid border border-gray-500 rounded"
+                >
+                  <button
+                    autofocus
+                    class="bg-white text-black flex flex-col border border-2 border-light-blue-500 rounded px-7 py-2 transition-colors items-center content-center active:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+                  >
+                    ERC721
+                  </button>
+
+                  <button
+                    class="bg-white text-black flex flex-col border border-2 border-light-blue-500 rounded px-7 py-2 ml-2 transition-colors items-center content-center focus:outline-none focus:bg-gray-700 focus:text-white"
+                  >
+                    ERC1155
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex flex-col mt-2 md:ml-2 md:mt-0 w-full">
+                <label class="text-green-600 font-medium">Quantity</label>
+                <input
+                  type="text"
+                  class="bg-white rounded w-full mt-2 p-3 py-3 transition-colors border border-gray-500 focus:border-purple-600 focus:outline-none"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col my-2 w-full">
+              <label class="text-green-600 font-medium"
+                >Social media URL
+                <span class="text-gray-500 font-thin">(optional)</span>
+              </label>
+              <input
+                type="text"
+                class="bg-white rounded w-full mt-2 p-3 transition-colors border border-gray-500 focus:border-purple-600 focus:outline-none"
+                placeholder="https://twitter.com/example"
+              />
+            </div>
+            <div class="my-6 w-full">
+              <button
+                type="button"
+                class="rounded flex border-solid border border-gray-500 rounded p-1 items-center focus:outline-none hover:bg-gray-200"
+              >
+                <input type="checkbox" class="w-7 h-7" />
+                <div class="ml-2">Content is 18+</div>
+              </button>
+            </div>
+
+            <div class="flex my-3">
+              <p class="font-normal text-gray-500 text-xs">
+                Once your NFT is minted on the Polygon blockchain, you will not
+                be able to edit or update any of its information.
+              </p>
+            </div>
+
+            <div class="flex my-3">
+              <p class="font-normal text-gray-500 text-xs">
+                You agree that any information uploaded to the Polygon's NFT
+                Minter will not contain material subject to copyright or other
+                proprietary rights, unless you have necessary permission or are
+                otherwise legally entitled to post the material.
+              </p>
+            </div>
+
+            <div class="flex my-6 w-full">
+              <button
+                type="button"
+                class="rounded text-white rounded bg-gray-300 p-2 items-center content-center focus:outline-none"
+              >
+                Wallet Not Connected
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <!-- #061024  -->
+    <div
+      class="flex max-w-auto py7 text-xs text-purple-500"
+      style="background-color: #19934a;"
+    >
+      1
+    </div>
+    <div
+      class="max-w-auto w-full flex px-8 py-24 -mb-20 bg-green-600"
+      style="
+        background-image: url(./footer-bg.png);
+        background: cover;
+        background: opacity(100);
+      "
+    >
+      <div class="max-w-6xl w-full mx-auto flex flex-col md:flex-row">
+        <div class="flex flex-col items-start mb-5">
+          <img src="2.1.png" alt="logo" class="h-8 mr-3" />
+          <p class="text-white font-normal mt-6">
+            Polygon is a protocol and a framework for building and <br />
+            connecting Ethereum-compatible blockchain networks
+          </p>
+        </div>
+        <div class="flex flex-1 md:justify-end mb-7">
+          <a href="https://twitter.com/coinskite">
+            <button
+              class=" bg-green-700 rounded hover:bg-white px-3 mr-3 h-10"
+            >
+              <svg height="22" width="22" viewBox="0 0 24 24" fill="#000">
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"
+                ></path>
+              </svg>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/coins-kite">
+            <button
+              class="rounded  bg-green-700 hover:bg-white px-3 h-10"
+            >
+              <img src="linkedin.png" alt="" class="h-5 w-5" />
+            </button>
+            <a href="https://www.instagram.com/coinskite/">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="instagram.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+          <a href="https://www.github.com/coinskite/">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="github.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+          <a href="https://www.youtube.com/channel/UCdDmAfczwB_Pu2k05mJNJOQ">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="youtube.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+          <a href="https://www.facebook.com/coinskite.coinskite">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="facebook.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+          <a href="https://medium.com/coinskite">
+            <button
+              class="rounded   bg-green-700 hover:bg-white px-3 h-10 ml-3"
+            >
+              <img src="medium.png" alt="" class="h-5 w-5" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
